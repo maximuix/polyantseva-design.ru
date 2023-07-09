@@ -1,0 +1,202 @@
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+# Разрешение на загрузку файлов
+php_value file_uploads On
+ 
+# Максимальное время выполнения скрипта в секундах
+php_value max_execution_time 60
+ 
+# Максимальное потребление памяти одним скриптом
+php_value memory_limit 64M
+ 
+# Максимально допустимый размер данных отправляемых методом POST
+php_value post_max_size 550M
+ 
+# Папка для хранения файлов во время загрузки
+php_value upload_tmp_dir home/user/temp
+ 
+# Максимальный размер загружаемого файла
+php_value upload_max_filesize 500M
+ 
+# Максимально разрешённое количество одновременно загружаемых файлов
+php_value max_file_uploads 10
+
+#RewriteEngine on   
+#RewriteCond %{ENV:HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [NC,R=301,L]
+
+SetEnvIfNoCase User-Agent "^Black Hole" bad_bot
+SetEnvIfNoCase User-Agent "^Titan" bad_bot
+SetEnvIfNoCase User-Agent "^WebStripper" bad_bot
+SetEnvIfNoCase User-Agent "^NetMechanic" bad_bot
+SetEnvIfNoCase User-Agent "^CherryPicker" bad_bot
+SetEnvIfNoCase User-Agent "^EmailCollector" bad_bot
+SetEnvIfNoCase User-Agent "^EmailSiphon" bad_bot
+SetEnvIfNoCase User-Agent "^WebBandit" bad_bot
+SetEnvIfNoCase User-Agent "^EmailWolf" bad_bot
+SetEnvIfNoCase User-Agent "^ExtractorPro" bad_bot
+SetEnvIfNoCase User-Agent "^CopyRightCheck" bad_bot
+SetEnvIfNoCase User-Agent "^Crescent" bad_bot
+SetEnvIfNoCase User-Agent "^Wget" bad_bot
+SetEnvIfNoCase User-Agent "^SiteSnagger" bad_bot
+SetEnvIfNoCase User-Agent "^ProWebWalker" bad_bot
+SetEnvIfNoCase User-Agent "^CheeseBot" bad_bot
+SetEnvIfNoCase User-Agent "^Teleport" bad_bot
+SetEnvIfNoCase User-Agent "^TeleportPro" bad_bot
+SetEnvIfNoCase User-Agent "^MIIxpc" bad_bot
+SetEnvIfNoCase User-Agent "^Telesoft" bad_bot
+SetEnvIfNoCase User-Agent "^Website Quester" bad_bot
+SetEnvIfNoCase User-Agent "^WebZip" bad_bot
+SetEnvIfNoCase User-Agent "^moget/2.1" bad_bot
+SetEnvIfNoCase User-Agent "^WebZip/4.0" bad_bot
+SetEnvIfNoCase User-Agent "^WebSauger" bad_bot
+SetEnvIfNoCase User-Agent "^WebCopier" bad_bot
+SetEnvIfNoCase User-Agent "^NetAnts" bad_bot
+SetEnvIfNoCase User-Agent "^Mister PiX" bad_bot
+SetEnvIfNoCase User-Agent "^WebAuto" bad_bot
+SetEnvIfNoCase User-Agent "^TheNomad" bad_bot
+SetEnvIfNoCase User-Agent "^WWW-Collector-E" bad_bot
+SetEnvIfNoCase User-Agent "^RMA" bad_bot
+SetEnvIfNoCase User-Agent "^libWeb/clsHTTP" bad_bot
+SetEnvIfNoCase User-Agent "^asterias" bad_bot
+SetEnvIfNoCase User-Agent "^httplib" bad_bot
+SetEnvIfNoCase User-Agent "^turingos" bad_bot
+SetEnvIfNoCase User-Agent "^spanner" bad_bot
+SetEnvIfNoCase User-Agent "^InfoNaviRobot" bad_bot
+SetEnvIfNoCase User-Agent "^Harvest/1.5" bad_bot
+SetEnvIfNoCase User-Agent "^Bullseye/1.0" bad_bot
+SetEnvIfNoCase User-Agent "^Mozilla/4.0 (compatible; BullsEye; Windows 95)" bad_bot
+SetEnvIfNoCase User-Agent "^Crescent Internet ToolPak HTTP OLE Control v.1.0" bad_bot
+SetEnvIfNoCase User-Agent "^CherryPickerSE/1.0" bad_bot
+SetEnvIfNoCase User-Agent "^CherryPicker /1.0" bad_bot
+SetEnvIfNoCase User-Agent "^WebBandit/3.50" bad_bot
+SetEnvIfNoCase User-Agent "^NICErsPRO" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft URL Control - 5.01.4511" bad_bot
+SetEnvIfNoCase User-Agent "^DittoSpyder" bad_bot
+SetEnvIfNoCase User-Agent "^Foobot" bad_bot
+SetEnvIfNoCase User-Agent "^WebmasterWorldForumBot" bad_bot
+SetEnvIfNoCase User-Agent "^SpankBot" bad_bot
+SetEnvIfNoCase User-Agent "^BotALot" bad_bot
+SetEnvIfNoCase User-Agent "^lwp-trivial/1.34" bad_bot
+SetEnvIfNoCase User-Agent "^lwp-trivial" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.6" bad_bot
+SetEnvIfNoCase User-Agent "^BunnySlippers" bad_bot
+SetEnvIfNoCase User-Agent "^Microsoft URL Control - 6.00.8169" bad_bot
+SetEnvIfNoCase User-Agent "^URLy Warning" bad_bot
+SetEnvIfNoCase User-Agent "^Wget/1.5.3" bad_bot
+SetEnvIfNoCase User-Agent "^LinkWalker" bad_bot
+SetEnvIfNoCase User-Agent "^cosmos" bad_bot
+SetEnvIfNoCase User-Agent "^moget" bad_bot
+SetEnvIfNoCase User-Agent "^hloader" bad_bot
+SetEnvIfNoCase User-Agent "^humanlinks" bad_bot
+SetEnvIfNoCase User-Agent "^LinkextractorPro" bad_bot
+SetEnvIfNoCase User-Agent "^Offline Explorer" bad_bot
+SetEnvIfNoCase User-Agent "^Mata Hari" bad_bot
+SetEnvIfNoCase User-Agent "^LexiBot" bad_bot
+SetEnvIfNoCase User-Agent "^Web Image Collector" bad_bot
+SetEnvIfNoCase User-Agent "^The Intraformant" bad_bot
+SetEnvIfNoCase User-Agent "^True_Robot/1.0" bad_bot
+SetEnvIfNoCase User-Agent "^True_Robot" bad_bot
+SetEnvIfNoCase User-Agent "^BlowFish/1.0" bad_bot
+SetEnvIfNoCase User-Agent "^JennyBot" bad_bot
+SetEnvIfNoCase User-Agent "^MIIxpc/4.2" bad_bot
+SetEnvIfNoCase User-Agent "^BuiltBotTough" bad_bot
+SetEnvIfNoCase User-Agent "^ProPowerBot/2.14" bad_bot
+SetEnvIfNoCase User-Agent "^BackDoorBot/1.0" bad_bot
+SetEnvIfNoCase User-Agent "^toCrawl/UrlDispatcher" bad_bot
+SetEnvIfNoCase User-Agent "^WebEnhancer" bad_bot
+SetEnvIfNoCase User-Agent "^TightTwatBot" bad_bot
+SetEnvIfNoCase User-Agent "^suzuran" bad_bot
+SetEnvIfNoCase User-Agent "^VCI WebViewer VCI WebViewer Win32" bad_bot
+SetEnvIfNoCase User-Agent "^VCI" bad_bot
+SetEnvIfNoCase User-Agent "^Szukacz/1.4" bad_bot
+SetEnvIfNoCase User-Agent "^QueryN Metasearch" bad_bot
+SetEnvIfNoCase User-Agent "^Openfind data gathere" bad_bot
+SetEnvIfNoCase User-Agent "^Openfind" bad_bot
+SetEnvIfNoCase User-Agent "^Xenu's Link Sleuth 1.1c" bad_bot
+SetEnvIfNoCase User-Agent "^Xenu's" bad_bot
+SetEnvIfNoCase User-Agent "^Zeus" bad_bot
+SetEnvIfNoCase User-Agent "^RepoMonkey Bait & Tackle/v1.01" bad_bot
+SetEnvIfNoCase User-Agent "^RepoMonkey" bad_bot
+SetEnvIfNoCase User-Agent "^Zeus 32297 Webster Pro V2.9 Win32" bad_bot
+SetEnvIfNoCase User-Agent "^Webster Pro" bad_bot
+SetEnvIfNoCase User-Agent "^EroCrawler" bad_bot
+SetEnvIfNoCase User-Agent "^LinkScan/8.1a Unix" bad_bot
+SetEnvIfNoCase User-Agent "^Keyword Density/0.9" bad_bot
+SetEnvIfNoCase User-Agent "^Kenjin Spider" bad_bot
+SetEnvIfNoCase User-Agent "^Cegbfeieh" bad_bot
+
+<Limit GET POST HEAD>
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+</limit>
+
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+RewriteRule ^(.*)$ ./project.php?id=$1 
+
+ErrorDocument 404 https://polyantseva-design.ru 
+ErrorDocument 500 https://polyantseva-design.ru 
+
+<IfModule mod_deflate.c>
+  <FilesMatch "\.(css|js|x?html?|php)$">
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 3600 seconds"
+  ExpiresByType image/x-icon "access plus 2592000 seconds"
+  ExpiresByType image/jpeg "access plus 2592000 seconds"
+  ExpiresByType image/png "access plus 2592000 seconds"
+  ExpiresByType image/gif "access plus 2592000 seconds" 
+  AddType image/svg+xml svg svgz
+  AddEncoding gzip svgz
+</IfModule>
+
+AddType image/svg+xml svg svgz
+
+AddEncoding gzip svgz
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php
+
+AddType image/svg+xml .svg .svgz
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ico|jpe?g|png|gif|swf)$">
+    Header set Cache-Control "max-age=2592000, public"
+  </FilesMatch>
+  <FilesMatch "\.(css)$">
+    Header set Cache-Control "max-age=604800, public"
+  </FilesMatch>
+  <FilesMatch "\.(js)$">
+    Header set Cache-Control "max-age=216000, private"
+  </FilesMatch>
+  <FilesMatch "\.(x?html?|php)$">
+    Header set Cache-Control "max-age=3600, private, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.svg$">
+    SetHandler application/x-httpd-php
+    Header set Content-Type "image/svg+xml"
+</FilesMatch>
+</IfModule>
+
+<ifModule mod_headers.c>
+  <filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+    Header unset ETag
+    FileETag None
+ </filesMatch>
+</ifModule>
+
+<ifModule mod_headers.c>
+  Header unset Last-Modified
+</ifModule>
