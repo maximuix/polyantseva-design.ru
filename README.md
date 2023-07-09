@@ -1,1 +1,0 @@
-# polyantseva-design.ru
